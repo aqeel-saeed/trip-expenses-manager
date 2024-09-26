@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+input, select {
+    display: block;
+    margin: 5px auto;
+    padding: 5px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.family, .expense, .pay {
+    margin: 10px 0;
+}
+
+#family-checkboxes {
+    margin: 5px 0;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #007BFF;  /* Light gray color */
+    margin: 20px 0;  /* Add some space above and below the line */
+}
+
+.invoice {
+    margin-bottom: 30px;  /* Add some spacing between invoices */
+}
+
+.invoice ul {
+    padding-left: 0;
+}
+
+.invoice li {
+    margin-bottom: 5px;
+    margin-left: 30px;
+
+}
+
+.invoice h4 {
+    margin-top: 15px;
+}
+
+.invoice-heading {
+    font-size: 1.5em; /* Larger font size */
+    font-weight: bold; /* Bold text */
+    color: #333; /* Dark gray color for better readability */
+    border-bottom: 2px solid #007BFF; /* Blue underline for emphasis */
+    padding-bottom: 10px; /* Space between text and line */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.green {
+    color: #a71717
+}
+
+.red {
+    color: #17a758
+}
+
+.balance-container {
+    display: inline-block;
+}

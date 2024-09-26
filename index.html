@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Expense Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Trip Expense Manager</h1>
+
+        <!-- Step 1: Add Families -->
+        <div id="family-section" class="section">
+            <h2>Add Families</h2>
+            <div id="family-inputs">
+                <div class="family">
+                    <input type="text" class="family-name" placeholder="Family Name">
+                    <input type="number" class="family-size" placeholder="Number of People" step="0.5">
+                </div>
+            </div>
+            <button id="add-family">Add Family</button>
+            <button id="next-to-expenses">Next: Add Expenses</button>
+        </div>
+
+        <!-- Step 2: Add Expenses -->
+        <div id="expense-section" class="section hidden">
+            <h2>Add Expenses</h2>
+            <div id="expense-inputs">
+                <div class="expense">
+                    <input type="text" class="expense-name" placeholder="Expense Name">
+                    <input type="number" class="expense-amount" placeholder="Amount">
+                    <div id="family-checkboxes"></div>
+                </div>
+            </div>
+            <button id="add-expense">Add Expense</button>
+            <button id="next-to-pays">Next: Add Pays</button>
+        </div>
+
+        <!-- Step 3: Add Pays -->
+        <div id="pay-section" class="section hidden">
+            <h2>Add Pays</h2>
+            <div id="pay-inputs">
+                <div class="pay">
+                    <input type="text" class="pay-name" placeholder="Pay Description">
+                    <input type="number" class="pay-amount" placeholder="Amount">
+                    <select class="pay-family"></select>
+                </div>
+            </div>
+            <button id="add-pay">Add Pay</button>
+            <button id="calculate">Calculate</button>
+        </div>
+
+        <!-- Option to Load from File -->
+        <div id="load-json-section" class="section">
+            <h2>Calculate from File</h2>
+            <input type="file" id="json-file">
+            <button id="calculate-from-file">Calculate from File</button>
+        </div>
+
+        <!-- Result Section -->
+        <div id="result-section" class="section hidden">
+            <h2>Invoices</h2>
+            <div id="invoices"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
